@@ -1,53 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Natalia Ferrer</title>
-</head>
-<body>
-    <!-- slider de natalia ferrer -->
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu -->
+      <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/img/NataliaFerre/logo.jpg"
+                alt=""
+                width="30"
+                height="24"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Sobre mí</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Diseños</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Escríbenos</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+              <i
+                class="fa fa-shopping-cart btn btn-outline-success"
+                aria-hidden="true"
+              ></i>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        </nav>
       </div>
-</body>
+      <div class="row">
+        <!-- slider de natalia ferrer -->
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/img/NataliaFerre/slider2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/NataliaFerre/slider1.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/img/NataliaFerre/slider3.jpeg"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+      <!-- bloque de dos -->
+      <div class="row">
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/natifoto.jpeg"
+            class="rounded-circle d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <div class="card rounded d-block w-100 img-thumbnail mx-auto d-block">
+            <div class="card-body">
+              <h5 class="card-title">Natalia Ferrer</h5>
+              <h6 class="card-subtitle text-muted">Quien soy</h6>
+              <p class="card-text">
+                una mujer emprendedora es aquella que asume riesgos, que sabe
+                que tiene muchas cosas que hacer, que todo depende de sí misma,
+                pero que sigue adelante. Una mujer emprendedora es aquella que
+                tiene un sueño y busca alcanzarlo que utiliza sus habilidades y
+                las pone en acción.
+              </p>
+              <p>
+                La capacidad de tomar riesgos calculados. ... La perseverancia y
+                la proyección a largo plazo. ... La capacidad de separar su ego
+                del éxito o fracaso de la empresa. ... Su gran sentido
+                colaborativo. ... Su empatía.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- bloque de 5 -->
+      <div class="row">
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto1.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto2.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto3.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto4.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto5.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- bloque de dos -->
+      <div class="row">
+        <div class="col">
+          <div class="card rounded d-block w-100 img-thumbnail mx-auto d-block">
+            <div class="card-body">
+              <h5 class="card-title">Que hacemos?</h5>
+              <h6 class="card-subtitle text-muted">Diseno de interiores</h6>
+              <p class="card-text">
+                Para nuestra empresa un diseño exitoso es el resultado de un
+                proceso detallado que establece cual es el ambiente más
+                apropiado para cada cliente, dándole a cada proyecto el
+                beneficio de un tratamiento nuevo, sin acudir a soluciones
+                estándar.
+              </p>
+              <p>
+                Es una empresa ampliamente reconocida en Bogotá como
+                especialista en Diseño Interior y Arquitectura de proyectos
+                corporativos, institucionales y comerciales. Con una trayectoria
+                de 35 años en el medio del diseño y un reconocimiento de marca
+                logrado a través de proyectos con espacios que brindan mejores
+                maneras de vivir y trabajar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/disenoreconocido.jpeg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- bloque de tres -->
+      <div class="row">
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto6.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <img
+            src="assets/img/NataliaFerre/producto7.jpg"
+            class="rounded d-block w-100 img-thumbnail mx-auto d-block"
+            alt="..."
+          />
+        </div>
+        <div class="col">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">Escribe tu correo</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Mensaje</label
+              >
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+              />
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Aceptar manejo de tus datos</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <!-- footehr -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid center">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </html>
